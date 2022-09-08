@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+body {
+
+    font-family: 'Open Sans';
+}
+
+.slide-1 {
+
+    background-image: url(https://uploaddeimagens.com.br/images/004/012/125/full/Grupo_105.png?1662470068);
+    background-attachment: fixed;
+    min-height: 500px; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+}
+
+.slide-2 {
+
+    background-image: url(https://uploaddeimagens.com.br/images/004/014/376/full/Grupo_156.png?1662643441);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+}
+
+.swiper-pagination-bullet {
+    width: var(--swiper-pagination-bullet-width,var(--swiper-pagination-bullet-size,8px));
+    height: var(--swiper-pagination-bullet-height,var(--swiper-pagination-bullet-size,8px));
+    display: inline-block;
+    border-radius: 50%;
+    background: var(--swiper-pagination-bullet-inactive-color,#FFF);
+    opacity: var(--swiper-pagination-bullet-inactive-opacity, .4);
+    border: #FFF 1px solid;
+  }
+
+
+.swiper-pagination-bullet-active {
+    opacity: var(--swiper-pagination-bullet-opacity, 1);
+    background: var(--swiper-pagination-color,#FFF);
+  }
+
+.black-gradient {
+
+    background-image: linear-gradient(to left top, #a80000, #820015, #59081a, #300d15, #000000);
+}
+
+.absolute-center {
+
+    left: 50%;
+    top: 5%;
+    transform: translateX(-50%);
+}
