@@ -150,7 +150,7 @@ export function Footer() {
                     Silveira Soares - 2022
                 </Text>
                 <Text color='white' fontFamily='inter' marginTop={2}>
-                    Desenvolvido por <strong>Eagles</strong>
+                    Desenvolvido por <strong>Eagless</strong>
                 </Text>
                 </Box>
                 </Container>
