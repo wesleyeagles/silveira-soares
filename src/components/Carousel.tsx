@@ -17,13 +17,13 @@ export function Carousel() {
         <Swiper
         parallax
         autoplay={{
-            delay: 2500,
+            delay: 3500,
             disableOnInteraction: false,
           }}
         pagination={{
             clickable: true,
           }}
-        modules={[Pagination]}
+        modules={[Pagination, Autoplay]}
         spaceBetween={0}
         slidesPerView={1}
         onSlideChange={() => console.log('slide change')}
@@ -31,17 +31,17 @@ export function Carousel() {
         >
             <SwiperSlide>
                 <Box display='flex' alignItems='center' className='slide-1' w='100vw' h='100vh'>
-                    <Container maxW='8xl'>
-                        <Heading color='white' fontFamily='inter'>
+                    <Container maxW={{ md: '2xl', lg: '5xl', xl: '6xl', '2xl': '8xl'}}>
+                        <Heading color='white'>
                         O GUIA COMPLETO
                         </Heading>
-                        <Heading as='h1' size='2xl' w='50rem' color='white' fontFamily='inter'>
+                        <Heading size='2xl' w={{sm: '100%', md: '50rem'}} color='white'>
                         DA REENGENHARIA ADMINISTRATIVA PARA
                         </Heading>
-                        <Heading paddingBottom={20} color='red' size='4xl'>
+                        <Heading paddingBottom={20} color='red' size={{sm: '3xl', md: '4xl'}}>
                         SUPERMERCADOS
                         </Heading>
-                        <Button bg='brand.red' color='white' w='10rem' h='4rem' fontSize='xl'>
+                        <Button bg='brand.red' color='white' w='10rem' h='4rem' fontSize='xl' _hover={{ bg: 'brand.hover.red'}}>
                             Baixar E-book
                         </Button>
                     </Container>
@@ -50,11 +50,11 @@ export function Carousel() {
 
             <SwiperSlide>
                 <Box display='flex' alignItems='center' className='slide-2' w='100vw' h='100vh'>
-                    <Container maxW='8xl'>
-                        <Heading as='h1' size='3xl' w='25rem' color='white' fontFamily='volkhov'>
+                    <Container maxW={{ md: '2xl', lg: '5xl', xl: '6xl', '2xl': '8xl'}}>
+                        <Heading as='h1' size='3xl' w={{sm: '100%', md: '25rem'}} color='white'>
                             Há mais de 20 anos fazendo a conta bater
                         </Heading>
-                        <Text paddingBottom={20} color='white' fontFamily='inter' w='28rem' marginTop={10}>
+                        <Text paddingBottom={20} color='white' w={{sm: '100%', md: '28rem'}} marginTop={10}>
                         Possuímos uma carteira com mais de 1000 clientes ativos espalhados por todo o Brasil em mais de 17 estados.
                         </Text>
                     </Container>

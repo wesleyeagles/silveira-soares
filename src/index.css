@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap'); 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -30,6 +30,15 @@ body {
 
 }
 
+.bg-servicos {
+
+    background-image: url(https://uploaddeimagens.com.br/images/004/018/819/full/Grupo_87.png?1662988757);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+}
+
 .swiper-pagination-bullet {
     width: var(--swiper-pagination-bullet-width,var(--swiper-pagination-bullet-size,8px));
     height: var(--swiper-pagination-bullet-height,var(--swiper-pagination-bullet-size,8px));
@@ -51,9 +60,57 @@ body {
     background-image: linear-gradient(to left top, #a80000, #820015, #59081a, #300d15, #000000);
 }
 
-.absolute-center {
+@media screen and (min-width: 320px) {
+    
+    html {
+        font-size: 80%;
+    }
 
-    left: 50%;
-    top: 5%;
-    transform: translateX(-50%);
+
 }
+
+
+
+@media screen and (min-width: 768px) {
+    
+    html {
+        font-size: 90%;
+    }
+
+    .absolute-center {
+
+        right: 0;
+        top: 5%;
+        transform: translateX(-50%);
+    }
+}
+
+@media screen and (min-width: 960px) {
+    
+    html {
+        font-size: 85%;
+    }
+
+    .absolute-center {
+
+        left: 50%;
+        top: 5%;
+        transform: translateX(-50%);
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    
+    html {
+        font-size: 90%;
+    }
+}
+
+@media screen and (min-width: 1556px) {
+
+    html {
+        font-size: 100%;
+    }
+}
+
