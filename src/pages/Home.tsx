@@ -22,6 +22,7 @@ export function Home() {
 
     const nameInput = useRef<any>(null)
 
+
     const scrollToFooter = async () => {
         scrollTo({
             top: 10000,

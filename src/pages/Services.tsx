@@ -6,10 +6,31 @@ import { Navbar } from "../components/Navbar";
 import { BsArrowDownShort } from 'react-icons/bs'
 import { Link } from "react-router-dom";
 import { Footer } from "../components/Footer";
+import { BackToTop } from '../components/BackToTop';
 
 export function Services() {
 
     const nameInput = useRef<any>(null)
+
+    const filter = useRef<any>(null)
+    const reengenhariaHash = useRef<any>(null)
+    const escrituracaoHash = useRef<any>(null)
+    const gestaotributariaHash = useRef<any>(null)
+    const escritafiscalHash = useRef<any>(null)
+    const departamentopessoalHash = useRef<any>(null)
+    const gestaosocietariaHash = useRef<any>(null)
+    const contabilidadeHash = useRef<any>(null)
+    const planejamentoestrategicoHash = useRef<any>(null)
+
+    const scrollToFilter = () => {
+        filter.current.scrollIntoView(scrollOptions)
+    }
+
+    const scrollOptions = {
+        behavior: "smooth",
+        block: "start",
+        inline: "nearest"
+    }
 
     const scrollToFooter = async () => {
         scrollTo({
@@ -23,12 +44,34 @@ export function Services() {
         
     }
 
+    const scrollToHash = (e: any) => {
+        console.log(e.target.textContent)
+        if (e.target.textContent === 'Reengenharia Administrativa') {
+            reengenhariaHash.current.scrollIntoView(scrollOptions)
+        } else if (e.target.textContent === 'Escrituração Contábil') {
+            escrituracaoHash.current.scrollIntoView(scrollOptions)
+        } else if (e.target.textContent === 'Gestão Tributária') {
+            gestaotributariaHash.current.scrollIntoView(scrollOptions)
+        } else if (e.target.textContent === 'Escrita Fiscal') {
+            escritafiscalHash.current.scrollIntoView(scrollOptions)
+        } else if (e.target.textContent === 'Departamento Pessoal') {
+            departamentopessoalHash.current.scrollIntoView(scrollOptions)
+        } else if (e.target.textContent === 'Gestão Societária') {
+            gestaosocietariaHash.current.scrollIntoView(scrollOptions)
+        } else if (e.target.textContent === 'Contabilidade') {
+            contabilidadeHash.current.scrollIntoView(scrollOptions)
+        } else if (e.target.textContent === 'Planejamento Estratégico') {
+            planejamentoestrategicoHash.current.scrollIntoView(scrollOptions)
+        }
+
+    }
+
 
     return (
         <Box>
             <Navbar />
             <Box h='100vh' className="bg-servicos">
-            <Box display='flex' alignItems='center' w='100vw' h='100vh'>
+            <Box display='flex' alignItems='center' h='100vh'>
                 <Container maxW={{ md: '2xl', lg: '5xl', xl: '6xl', '2xl': '8xl'}}>
                         <Heading color='white' size='2xl'>
                         NOSSOS
@@ -48,60 +91,60 @@ export function Services() {
                     <Box display='flex' justifyContent='space-between'>
                         <Box w='70rem'>
                             <Box display='flex' flexDirection='column'>
-                                <Box display='flex' alignItems='center' w='23rem' bg='brand.red' padding={2} cursor='pointer' marginBlock={1} borderRadius={6}>
+                                <Box ref={filter} onClick={scrollToHash} display='flex' alignItems='center' w='23rem' bg='brand.red' padding={2} cursor='pointer' marginBlock={1} borderRadius={6}>
                                     <Text flex={1} color='white' fontSize='1.1rem' paddingLeft={3}>
                                         Reengenharia Administrativa
                                     </Text>
-                                    <Icon as={BsArrowDownShort} w={30} h={30} color='white'/>
+                                    <Icon pointerEvents='none' as={BsArrowDownShort} w={30} h={30} color='white'/>
                                 </Box>
 
-                                <Box display='flex' alignItems='center' w='23rem' bg='brand.red' padding={2} cursor='pointer' marginBlock={1} borderRadius={6}>
+                                <Box onClick={scrollToHash} display='flex' alignItems='center' w='23rem' bg='brand.red' padding={2} cursor='pointer' marginBlock={1} borderRadius={6}>
                                     <Text flex={1} color='white' fontSize='1.1rem' paddingLeft={3}>
                                         Escrituração Contábil
                                     </Text>
-                                    <Icon as={BsArrowDownShort} w={30} h={30} color='white'/>
+                                    <Icon pointerEvents='none' as={BsArrowDownShort} w={30} h={30} color='white'/>
                                 </Box>
 
-                                <Box display='flex' alignItems='center' w='23rem' bg='brand.red' padding={2} cursor='pointer' marginBlock={1} borderRadius={6}>
+                                <Box onClick={scrollToHash} display='flex' alignItems='center' w='23rem' bg='brand.red' padding={2} cursor='pointer' marginBlock={1} borderRadius={6}>
                                     <Text flex={1} color='white' fontSize='1.1rem' paddingLeft={3}>
                                         Gestão Tributária
                                     </Text>
-                                    <Icon as={BsArrowDownShort} w={30} h={30} color='white'/>
+                                    <Icon pointerEvents='none' as={BsArrowDownShort} w={30} h={30} color='white'/>
                                 </Box>
 
-                                <Box display='flex' alignItems='center' w='23rem' bg='brand.red' padding={2} cursor='pointer' marginBlock={1} borderRadius={6}>
+                                <Box onClick={scrollToHash} display='flex' alignItems='center' w='23rem' bg='brand.red' padding={2} cursor='pointer' marginBlock={1} borderRadius={6}>
                                     <Text flex={1} color='white' fontSize='1.1rem' paddingLeft={3}>
                                         Escrita Fiscal
                                     </Text>
-                                    <Icon as={BsArrowDownShort} w={30} h={30} color='white'/>
+                                    <Icon pointerEvents='none' as={BsArrowDownShort} w={30} h={30} color='white'/>
                                 </Box>
 
-                                <Box display='flex' alignItems='center' w='23rem' bg='brand.red' padding={2} cursor='pointer' marginBlock={1} borderRadius={6}>
+                                <Box onClick={scrollToHash} display='flex' alignItems='center' w='23rem' bg='brand.red' padding={2} cursor='pointer' marginBlock={1} borderRadius={6}>
                                     <Text flex={1} color='white' fontSize='1.1rem' paddingLeft={3}>
                                         Departamento Pessoal
                                     </Text>
-                                    <Icon as={BsArrowDownShort} w={30} h={30} color='white'/>
+                                    <Icon pointerEvents='none' as={BsArrowDownShort} w={30} h={30} color='white'/>
                                 </Box>
 
-                                <Box display='flex' alignItems='center' w='23rem' bg='brand.red' padding={2} cursor='pointer' marginBlock={1} borderRadius={6}>
+                                <Box onClick={scrollToHash} display='flex' alignItems='center' w='23rem' bg='brand.red' padding={2} cursor='pointer' marginBlock={1} borderRadius={6}>
                                     <Text flex={1} color='white' fontSize='1.1rem' paddingLeft={3}>
                                         Gestão Societária
                                     </Text>
-                                    <Icon as={BsArrowDownShort} w={30} h={30} color='white'/>
+                                    <Icon pointerEvents='none' as={BsArrowDownShort} w={30} h={30} color='white'/>
                                 </Box>
 
-                                <Box display='flex' alignItems='center' w='23rem' bg='brand.red' padding={2} cursor='pointer' marginBlock={1} borderRadius={6}>
+                                <Box onClick={scrollToHash} display='flex' alignItems='center' w='23rem' bg='brand.red' padding={2} cursor='pointer' marginBlock={1} borderRadius={6}>
                                     <Text flex={1} color='white' fontSize='1.1rem' paddingLeft={3}>
                                         Contabilidade
                                     </Text>
-                                    <Icon as={BsArrowDownShort} w={30} h={30} color='white'/>
+                                    <Icon pointerEvents='none' as={BsArrowDownShort} w={30} h={30} color='white'/>
                                 </Box>
 
-                                <Box display='flex' alignItems='center' w='23rem' bg='brand.red' padding={2} cursor='pointer' marginBlock={1} borderRadius={6}>
+                                <Box onClick={scrollToHash} display='flex' alignItems='center' w='23rem' bg='brand.red' padding={2} cursor='pointer' marginBlock={1} borderRadius={6}>
                                     <Text flex={1} color='white' fontSize='1.1rem' paddingLeft={3}>
                                         Planejamento Estratégico
                                     </Text>
-                                    <Icon as={BsArrowDownShort} w={30} h={30} color='white'/>
+                                    <Icon pointerEvents='none' as={BsArrowDownShort} w={30} h={30} color='white'/>
                                 </Box>
                             </Box>
                         </Box>
@@ -122,7 +165,7 @@ export function Services() {
             <Box>
                 <Container maxW={{ md: '2xl', lg: '5xl', xl: '6xl', '2xl': '8xl'}}>
                     <Box>
-                        <Heading size='2xl' marginBottom={12}>
+                        <Heading className='scroll-mt-10' ref={reengenhariaHash} size='2xl' marginBottom={12}>
                             Reengenharia Administrativa
                         </Heading>
 
@@ -147,7 +190,7 @@ export function Services() {
             <Box className="black-gradient" marginTop={16} paddingBlock={20}>
                 <Container maxW={{ md: '2xl', lg: '5xl', xl: '6xl', '2xl': '8xl'}}>
                     <Box>
-                        <Heading color='white' size='2xl' marginBottom={12}>
+                        <Heading className='scroll-mt-10' ref={escrituracaoHash} color='white' size='2xl' marginBottom={12}>
                             Escrituração Contábil
                         </Heading>
 
@@ -185,7 +228,7 @@ export function Services() {
             <Box paddingBlock={20}>
                 <Container maxW={{ md: '2xl', lg: '5xl', xl: '6xl', '2xl': '8xl'}}>
                     <Box>
-                        <Heading size='2xl' marginBottom={12}>
+                        <Heading className='scroll-mt-10' ref={gestaotributariaHash} size='2xl' marginBottom={12}>
                             Gestão Tributária
                         </Heading>
 
@@ -212,7 +255,7 @@ export function Services() {
             <Box className="black-gradient" marginTop={16} paddingBlock={20}>
                 <Container maxW={{ md: '2xl', lg: '5xl', xl: '6xl', '2xl': '8xl'}}>
                     <Box>
-                        <Heading color='white' size='2xl' marginBottom={12}>
+                        <Heading className='scroll-mt-10' ref={escritafiscalHash} color='white' size='2xl' marginBottom={12}>
                             Escrita Fiscal
                         </Heading>
 
@@ -243,7 +286,7 @@ export function Services() {
             <Box paddingBlock={20}>
                 <Container maxW={{ md: '2xl', lg: '5xl', xl: '6xl', '2xl': '8xl'}}>
                     <Box>
-                        <Heading size='2xl' marginBottom={12}>
+                        <Heading className='scroll-mt-10' ref={departamentopessoalHash} size='2xl' marginBottom={12}>
                             Departamento Pessoal
                         </Heading>
 
@@ -268,7 +311,7 @@ export function Services() {
             <Box className="black-gradient" marginTop={16} paddingBlock={20}>
                 <Container maxW={{ md: '2xl', lg: '5xl', xl: '6xl', '2xl': '8xl'}}>
                     <Box>
-                        <Heading color='white' size='2xl' marginBottom={12}>
+                        <Heading className='scroll-mt-10' ref={gestaosocietariaHash} color='white' size='2xl' marginBottom={12}>
                             Gestão Societária
                         </Heading>
 
@@ -311,7 +354,7 @@ export function Services() {
             <Box paddingBlock={20}>
                 <Container maxW={{ md: '2xl', lg: '5xl', xl: '6xl', '2xl': '8xl'}}>
                     <Box>
-                        <Heading size='2xl' marginBottom={12}>
+                        <Heading className='scroll-mt-10' ref={contabilidadeHash} size='2xl' marginBottom={12}>
                             Contabilidade
                         </Heading>
 
@@ -331,7 +374,7 @@ export function Services() {
             <Box className="black-gradient" marginTop={16} paddingBlock={20}>
                 <Container maxW={{ md: '2xl', lg: '5xl', xl: '6xl', '2xl': '8xl'}}>
                     <Box>
-                        <Heading color='white' size='2xl' marginBottom={12}>
+                        <Heading className='scroll-mt-10' ref={planejamentoestrategicoHash} color='white' size='2xl' marginBottom={12}>
                             Planejamento Estratégico
                         </Heading>
 
@@ -365,6 +408,7 @@ export function Services() {
             <iframe className="w-full h-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3465.835043309774!2d-51.130986484390135!3d-29.695561822098313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951942525f4d4775%3A0x4847f488bd473288!2sR.%20Jo%C3%A3o%20Pessoa%2C%20180%20-%20P%C3%A1tria%20Nova%2C%20Novo%20Hamburgo%20-%20RS%2C%2093410-120!5e0!3m2!1spt-BR!2sbr!4v1662663744072!5m2!1spt-BR!2sbr"></iframe>
             </Box>
             <Footer foawardRef={nameInput}/>
+            <BackToTop scrollToTopFunction={scrollToFilter}/>
         </Box>
     )
 }
