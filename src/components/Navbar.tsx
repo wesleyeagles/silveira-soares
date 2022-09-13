@@ -17,7 +17,7 @@ export function Navbar() {
 
     return (
         <Box position='absolute' zIndex={100} bg='transparent' w='100%' h='110px'>
-            <Container maxW={{ md: '2xl', lg: '5xl', xl: '6xl', '2xl': '8xl'}} h='100%'>
+            <Container maxW={{ md: '3xl', lg: '5xl', xl: '6xl', '2xl': '8xl'}} h='100%'>
                 <Box w='100%' h='100%' display='flex' alignItems='center'>
                     <Box className="logo" flex={1}>
                         <img className="w-[40px]" src="https://gistcdn.githack.com/wesleyeagles/ab2dfb43a59f5d3e4febbd345490962c/raw/1b142c8915d6a47ded29fab0e8bbc887dd4163df/logo_silveira.svg" alt="logo" />

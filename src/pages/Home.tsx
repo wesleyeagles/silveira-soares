@@ -40,7 +40,7 @@ export function Home() {
         <Box>
             <Navbar />
             <Carousel />
-            <Container maxW={{ md: '2xl', lg: '5xl', xl: '6xl', '2xl': '8xl'}}>
+            <Container maxW={{ md: '3xl', lg: '5xl', xl: '6xl', '2xl': '8xl'}}>
             <Box display='flex' flexDirection={{ sm: 'column', lg: 'row'}} justifyContent={{ sm: 'center', lg: 'space-between'}} alignItems='center' h='50rem'>
                 <Box>
                     <Heading color='brand.gray' as='h2' size='3xl' w={{ lg: '28rem', xl: '38rem', '2xl': '38rem'}}>
@@ -75,7 +75,7 @@ export function Home() {
             </Box>
             </Container>
             <Box className="black-gradient" paddingBlock={24}>
-                <Container maxW={{ md: '2xl', lg: '5xl', xl: '6xl', '2xl': '8xl'}}>
+                <Container maxW={{ md: '3xl', lg: '5xl', xl: '6xl', '2xl': '8xl'}}>
                 <Heading textAlign='center' as='h2' color='white' size='2xl'>                
                     Conheça nossos serviços
                 </Heading>

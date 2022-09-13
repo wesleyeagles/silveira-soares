@@ -1,6 +1,7 @@
 import { useRef } from 'react'
-import { Box, Button, Container, Heading, Icon, ListItem, Text, UnorderedList } from "@chakra-ui/react";
+import { Box, Button, Container, Heading, Icon, Image, ListItem, Text, UnorderedList } from "@chakra-ui/react";
 import { FaCoffee } from 'react-icons/fa'
+import { AiTwotoneContainer } from 'react-icons/ai'
 import { Navbar } from "../components/Navbar";
 
 import { BsArrowDownShort } from 'react-icons/bs'
@@ -72,7 +73,7 @@ export function Services() {
             <Navbar />
             <Box h='100vh' className="bg-servicos">
             <Box display='flex' alignItems='center' h='100vh'>
-                <Container maxW={{ md: '2xl', lg: '5xl', xl: '6xl', '2xl': '8xl'}}>
+                <Container maxW={{ md: '3xl', lg: '5xl', xl: '6xl', '2xl': '8xl'}}>
                         <Heading color='white' size='2xl'>
                         NOSSOS
                         </Heading>
@@ -87,60 +88,60 @@ export function Services() {
             </Box>
 
             <Box paddingBlock={20}>
-                <Container maxW={{ md: '2xl', lg: '5xl', xl: '6xl', '2xl': '8xl'}}>
-                    <Box display='flex' justifyContent='space-between'>
-                        <Box w='70rem'>
-                            <Box display='flex' flexDirection='column'>
-                                <Box ref={filter} onClick={scrollToHash} display='flex' alignItems='center' w='23rem' bg='brand.red' padding={2} cursor='pointer' marginBlock={1} borderRadius={6}>
+                <Container maxW={{ md: '3xl', lg: '5xl', xl: '6xl', '2xl': '8xl'}}>
+                    <Box display='flex' flexDirection={{sm: 'column-reverse', lg: 'row'}} justifyContent='space-between'>
+                        <Box w={{sm: '100%', lg:'70rem'}}>
+                            <Box display='flex' flexWrap={{sm: 'wrap', lg: 'nowrap'}} flexDirection={{sm: 'row', lg:'column'}} marginTop={{sm: '2rem', lg: '0rem'}}>
+                                <Box marginRight={{xs: '.5rem', lg: '0rem'}} ref={filter} onClick={scrollToHash} display='flex' alignItems='center' w={{sm: '100%', xs: '22.5rem', lg:'23rem'}} bg='brand.red' padding={2} cursor='pointer' marginBlock={1} borderRadius={6}>
                                     <Text flex={1} color='white' fontSize='1.1rem' paddingLeft={3}>
                                         Reengenharia Administrativa
                                     </Text>
                                     <Icon pointerEvents='none' as={BsArrowDownShort} w={30} h={30} color='white'/>
                                 </Box>
 
-                                <Box onClick={scrollToHash} display='flex' alignItems='center' w='23rem' bg='brand.red' padding={2} cursor='pointer' marginBlock={1} borderRadius={6}>
+                                <Box marginLeft={{xs: '.5rem', lg: '0rem'}} onClick={scrollToHash} display='flex' alignItems='center' w={{sm: '100%', xs: '22.5rem', lg:'23rem'}} bg='brand.red' padding={2} cursor='pointer' marginBlock={1} borderRadius={6}>
                                     <Text flex={1} color='white' fontSize='1.1rem' paddingLeft={3}>
                                         Escrituração Contábil
                                     </Text>
                                     <Icon pointerEvents='none' as={BsArrowDownShort} w={30} h={30} color='white'/>
                                 </Box>
 
-                                <Box onClick={scrollToHash} display='flex' alignItems='center' w='23rem' bg='brand.red' padding={2} cursor='pointer' marginBlock={1} borderRadius={6}>
+                                <Box marginRight={{xs: '.5rem', lg: '0rem'}} onClick={scrollToHash} display='flex' alignItems='center' w={{sm: '100%', xs: '22.5rem', lg:'23rem'}} bg='brand.red' padding={2} cursor='pointer' marginBlock={1} borderRadius={6}>
                                     <Text flex={1} color='white' fontSize='1.1rem' paddingLeft={3}>
                                         Gestão Tributária
                                     </Text>
                                     <Icon pointerEvents='none' as={BsArrowDownShort} w={30} h={30} color='white'/>
                                 </Box>
 
-                                <Box onClick={scrollToHash} display='flex' alignItems='center' w='23rem' bg='brand.red' padding={2} cursor='pointer' marginBlock={1} borderRadius={6}>
+                                <Box marginLeft={{xs: '.5rem', lg: '0rem'}} onClick={scrollToHash} display='flex' alignItems='center' w={{sm: '100%', xs: '22.5rem', lg:'23rem'}} bg='brand.red' padding={2} cursor='pointer' marginBlock={1} borderRadius={6}>
                                     <Text flex={1} color='white' fontSize='1.1rem' paddingLeft={3}>
                                         Escrita Fiscal
                                     </Text>
                                     <Icon pointerEvents='none' as={BsArrowDownShort} w={30} h={30} color='white'/>
                                 </Box>
 
-                                <Box onClick={scrollToHash} display='flex' alignItems='center' w='23rem' bg='brand.red' padding={2} cursor='pointer' marginBlock={1} borderRadius={6}>
+                                <Box marginRight={{xs: '.5rem', lg: '0rem'}} onClick={scrollToHash} display='flex' alignItems='center' w={{sm: '100%', xs: '22.5rem', lg:'23rem'}} bg='brand.red' padding={2} cursor='pointer' marginBlock={1} borderRadius={6}>
                                     <Text flex={1} color='white' fontSize='1.1rem' paddingLeft={3}>
                                         Departamento Pessoal
                                     </Text>
                                     <Icon pointerEvents='none' as={BsArrowDownShort} w={30} h={30} color='white'/>
                                 </Box>
 
-                                <Box onClick={scrollToHash} display='flex' alignItems='center' w='23rem' bg='brand.red' padding={2} cursor='pointer' marginBlock={1} borderRadius={6}>
+                                <Box marginLeft={{xs: '.5rem', lg: '0rem'}} onClick={scrollToHash} display='flex' alignItems='center' w={{sm: '100%', xs: '22.5rem', lg:'23rem'}} bg='brand.red' padding={2} cursor='pointer' marginBlock={1} borderRadius={6}>
                                     <Text flex={1} color='white' fontSize='1.1rem' paddingLeft={3}>
                                         Gestão Societária
                                     </Text>
                                     <Icon pointerEvents='none' as={BsArrowDownShort} w={30} h={30} color='white'/>
                                 </Box>
 
-                                <Box onClick={scrollToHash} display='flex' alignItems='center' w='23rem' bg='brand.red' padding={2} cursor='pointer' marginBlock={1} borderRadius={6}>
+                                <Box marginRight={{xs: '.5rem', lg: '0rem'}} onClick={scrollToHash} display='flex' alignItems='center' w={{sm: '100%', xs: '22.5rem', lg:'23rem'}} bg='brand.red' padding={2} cursor='pointer' marginBlock={1} borderRadius={6}>
                                     <Text flex={1} color='white' fontSize='1.1rem' paddingLeft={3}>
                                         Contabilidade
                                     </Text>
                                     <Icon pointerEvents='none' as={BsArrowDownShort} w={30} h={30} color='white'/>
                                 </Box>
 
-                                <Box onClick={scrollToHash} display='flex' alignItems='center' w='23rem' bg='brand.red' padding={2} cursor='pointer' marginBlock={1} borderRadius={6}>
+                                <Box marginLeft={{xs: '.5rem', lg: '0rem'}} onClick={scrollToHash} display='flex' alignItems='center' w={{sm: '100%', xs: '22.5rem', lg:'23rem'}} bg='brand.red' padding={2} cursor='pointer' marginBlock={1} borderRadius={6}>
                                     <Text flex={1} color='white' fontSize='1.1rem' paddingLeft={3}>
                                         Planejamento Estratégico
                                     </Text>
@@ -149,7 +150,7 @@ export function Services() {
                             </Box>
                         </Box>
 
-                        <Box w='75rem'>
+                        <Box w={{sm: '100%', lg:'75rem'}}>
                             <Text color='brand.gray' fontSize='1.3rem' fontWeight='300'>
                             Especializada em gestão tributária, fiscal e contábil, a Silveira Soares é uma empresa referência em planejamento tributário com ênfase na elisão fiscal contemplando as operações do mercado nacional e internacional. 
                             Além disso, trabalhamos com plena segurança fiscal e jurídica com foco na excelência na prestação de serviços.
@@ -163,7 +164,7 @@ export function Services() {
             </Box>
 
             <Box>
-                <Container maxW={{ md: '2xl', lg: '5xl', xl: '6xl', '2xl': '8xl'}}>
+                <Container maxW={{ md: '3xl', lg: '5xl', xl: '6xl', '2xl': '8xl'}}>
                     <Box>
                         <Heading className='scroll-mt-10' ref={reengenhariaHash} size='2xl' marginBottom={12}>
                             Reengenharia Administrativa
@@ -188,7 +189,7 @@ export function Services() {
             </Box>
 
             <Box className="black-gradient" marginTop={16} paddingBlock={20}>
-                <Container maxW={{ md: '2xl', lg: '5xl', xl: '6xl', '2xl': '8xl'}}>
+                <Container maxW={{ md: '3xl', lg: '5xl', xl: '6xl', '2xl': '8xl'}}>
                     <Box>
                         <Heading className='scroll-mt-10' ref={escrituracaoHash} color='white' size='2xl' marginBottom={12}>
                             Escrituração Contábil
@@ -226,7 +227,7 @@ export function Services() {
             </Box>
 
             <Box paddingBlock={20}>
-                <Container maxW={{ md: '2xl', lg: '5xl', xl: '6xl', '2xl': '8xl'}}>
+                <Container maxW={{ md: '3xl', lg: '5xl', xl: '6xl', '2xl': '8xl'}}>
                     <Box>
                         <Heading className='scroll-mt-10' ref={gestaotributariaHash} size='2xl' marginBottom={12}>
                             Gestão Tributária
@@ -252,19 +253,29 @@ export function Services() {
                 </Container>
             </Box>
 
-            <Box className="black-gradient" marginTop={16} paddingBlock={20}>
-                <Container maxW={{ md: '2xl', lg: '5xl', xl: '6xl', '2xl': '8xl'}}>
+            <Box className="black-gradient" marginTop={16} paddingTop={20} position='relative'>
+                <Container maxW={{ md: '3xl', lg: '5xl', xl: '6xl', '2xl': '8xl'}}>
                     <Box>
-                        <Heading className='scroll-mt-10' ref={escritafiscalHash} color='white' size='2xl' marginBottom={12}>
+                        <Box display='flex' alignItems='center' marginBottom={6}>
+                        <Icon as={AiTwotoneContainer} color='white' w={38} h={38}/>
+                        <Heading className='scroll-mt-10' ref={escritafiscalHash} color='white' size='2xl'>
                             Escrita Fiscal
                         </Heading>
+                        </Box>
 
+                        <Box display='flex' justifyContent='space-between'>
+                        <Box w={{lg: '60rem'}}>
                         <Text fontSize='1.3rem' fontWeight='300' color='white' marginTop={5}>
                         A escrita fiscal serve para comprovar as operações e receitas de compra e venda de mercadorias e de serviços prestados ou tomados. Todo negócio, independentemente do seu porte ou ramo de atuação, precisa realizar a escrita fiscal.
                         </Text>
                         <Text marginTop={3} fontSize='1.3rem' fontWeight='300' color='white'>
                         A escrituração fiscal é um serviço de prestação de contas sobre as movimentações financeiras e tributárias que a maioria das empresas precisa ter com o Fisco. Isso inclui o seu faturamento, os impostos e outras informações que são do interesse do Estado.
                         </Text>
+                        </Box>
+                        <Box>
+                            <Image src='/images/escrita-fiscal.png'/>
+                        </Box>
+                        </Box>
                         <Text marginTop={3} fontSize='1.3rem' fontWeight='300' color='white'>
                         Através dela que várias análises são realizadas pelo governo, cruzando dados de compra e venda, fornecedores, clientes, estoques, produção, cartão de crédito, importação e exportação, inventário, dentre outros.
                         </Text>
@@ -278,13 +289,16 @@ export function Services() {
                         Realizamos a escrituração fiscal de entradas e saídas, serviços prestados e tomados, conhecimentos de transportes, livro de movimentação de combustíveis, entre outros.
                         </Text>
 
-
+                        
                     </Box>
                 </Container>
+                <Box  marginTop={10}>
+                    <Image src='/images/escrita-fiscal-banner.jpg'/>
+                </Box>
             </Box>
 
             <Box paddingBlock={20}>
-                <Container maxW={{ md: '2xl', lg: '5xl', xl: '6xl', '2xl': '8xl'}}>
+                <Container maxW={{ md: '3xl', lg: '5xl', xl: '6xl', '2xl': '8xl'}}>
                     <Box>
                         <Heading className='scroll-mt-10' ref={departamentopessoalHash} size='2xl' marginBottom={12}>
                             Departamento Pessoal
@@ -309,7 +323,7 @@ export function Services() {
 
 
             <Box className="black-gradient" marginTop={16} paddingBlock={20}>
-                <Container maxW={{ md: '2xl', lg: '5xl', xl: '6xl', '2xl': '8xl'}}>
+                <Container maxW={{ md: '3xl', lg: '5xl', xl: '6xl', '2xl': '8xl'}}>
                     <Box>
                         <Heading className='scroll-mt-10' ref={gestaosocietariaHash} color='white' size='2xl' marginBottom={12}>
                             Gestão Societária
@@ -352,7 +366,7 @@ export function Services() {
             </Box>
 
             <Box paddingBlock={20}>
-                <Container maxW={{ md: '2xl', lg: '5xl', xl: '6xl', '2xl': '8xl'}}>
+                <Container maxW={{ md: '3xl', lg: '5xl', xl: '6xl', '2xl': '8xl'}}>
                     <Box>
                         <Heading className='scroll-mt-10' ref={contabilidadeHash} size='2xl' marginBottom={12}>
                             Contabilidade
@@ -372,7 +386,7 @@ export function Services() {
             </Box>
 
             <Box className="black-gradient" marginTop={16} paddingBlock={20}>
-                <Container maxW={{ md: '2xl', lg: '5xl', xl: '6xl', '2xl': '8xl'}}>
+                <Container maxW={{ md: '3xl', lg: '5xl', xl: '6xl', '2xl': '8xl'}}>
                     <Box>
                         <Heading className='scroll-mt-10' ref={planejamentoestrategicoHash} color='white' size='2xl' marginBottom={12}>
                             Planejamento Estratégico
@@ -402,7 +416,7 @@ export function Services() {
             </Box>
 
             <Box h='40rem' position='relative'>
-            <Button onClick={scrollToFooter} w='16rem' h='3rem' className="absolute-center" position='absolute' leftIcon={<FaCoffee size={23}/>} colorScheme='teal' variant='solid' fontSize='1.2rem' bg='brand.red' _hover={{ bg: 'brand.red' }}>
+            <Button display={{sm: 'none', xs: 'flex'}} onClick={scrollToFooter} w='16rem' h='3rem' className="absolute-center" position='absolute' leftIcon={<FaCoffee size={23}/>} colorScheme='teal' variant='solid' fontSize='1.2rem' bg='brand.red' _hover={{ bg: 'brand.red' }}>
                 Venha tomar um café!
             </Button>
             <iframe className="w-full h-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3465.835043309774!2d-51.130986484390135!3d-29.695561822098313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951942525f4d4775%3A0x4847f488bd473288!2sR.%20Jo%C3%A3o%20Pessoa%2C%20180%20-%20P%C3%A1tria%20Nova%2C%20Novo%20Hamburgo%20-%20RS%2C%2093410-120!5e0!3m2!1spt-BR!2sbr!4v1662663744072!5m2!1spt-BR!2sbr"></iframe>
