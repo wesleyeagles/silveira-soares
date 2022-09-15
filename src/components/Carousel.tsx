@@ -31,7 +31,7 @@ export function Carousel() {
         >
             <SwiperSlide>
                 <Box display='flex' alignItems='center' className='slide-1' w='100vw' h='100vh'>
-                    <Container maxW={{ md: '2xl', lg: '5xl', xl: '6xl', '2xl': '8xl'}}>
+                    <Container maxW={{ md: '3xl', lg: '5xl', xl: '6xl', '2xl': '8xl'}}>
                         <Heading color='white'>
                         O GUIA COMPLETO
                         </Heading>
@@ -50,7 +50,7 @@ export function Carousel() {
 
             <SwiperSlide>
                 <Box display='flex' alignItems='center' className='slide-2' w='100vw' h='100vh'>
-                    <Container maxW={{ md: '2xl', lg: '5xl', xl: '6xl', '2xl': '8xl'}}>
+                    <Container maxW={{ md: '3xl', lg: '5xl', xl: '6xl', '2xl': '8xl'}}>
                         <Heading as='h1' size='3xl' w={{sm: '100%', md: '25rem'}} color='white'>
                             Há mais de 20 anos fazendo a conta bater
                         </Heading>
