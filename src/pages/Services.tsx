@@ -12,7 +12,6 @@ import { Link } from "react-router-dom";
 import { Footer } from "../components/Footer";
 import { BackToTop } from '../components/BackToTop';
 
-
 export function Services() {
 
     const nameInput = useRef<any>(null)
