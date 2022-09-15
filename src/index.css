@@ -5,9 +5,10 @@
 
 
 
-body {
+body, html {
 
     font-family: 'Open Sans'!important;
+    scroll-behavior: smooth;
 }
 
 .slide-1 {

@@ -1,4 +1,3 @@
-import React from 'react';
 import { useRef } from 'react'
 import { Box, Button, Container, Heading, Icon, Image, ListItem, Text, UnorderedList } from "@chakra-ui/react";
 import { FaCoffee } from 'react-icons/fa'
@@ -17,6 +16,7 @@ export function Services() {
     const nameInput = useRef<any>(null)
 
     const filter = useRef<any>(null)
+
     const reengenhariaHash = useRef<any>(null)
     const escrituracaoHash = useRef<any>(null)
     const gestaotributariaHash = useRef<any>(null)
@@ -80,7 +80,7 @@ export function Services() {
                         <Heading color='white' size='2xl'>
                         NOSSOS
                         </Heading>
-                        <Heading size='4xl' w={{sm: '100%', md: '50rem'}} color='red'>
+                        <Heading size='4xl' w={{sm: '100%', lg: '50rem'}} color='red'>
                         SERVIÇOS
                         </Heading>
                         <Text color='white' marginTop={5} fontSize='1.3rem'>
@@ -168,7 +168,7 @@ export function Services() {
 
             <Box>
                 <Container maxW={{ md: '3xl', lg: '5xl', xl: '6xl', '2xl': '8xl'}}>
-                    <Box>
+                    <Box id='reengenharia'>
                         <Heading className='scroll-mt-10' ref={reengenhariaHash} size='2xl' marginBottom={12}>
                             Reengenharia Administrativa
                         </Heading>
@@ -191,10 +191,9 @@ export function Services() {
                 </Container>
             </Box>
 
-            <Box className="black-gradient" marginTop={16} paddingBlock={20}>
+            <Box className="black-gradient" marginTop={16} paddingBlock={20}  id='escrituração-contábil'>
                 <Container maxW={{ md: '3xl', lg: '5xl', xl: '6xl', '2xl': '8xl'}}>
                     <Box>
-
                         <Box display='flex' alignItems='center' marginBottom={6}>
                         <Icon marginRight={3} as={FiEdit3} color='white' w={47} h={47}/>
                         <Heading className='scroll-mt-10' ref={escrituracaoHash} color='white' size='2xl'>
@@ -202,8 +201,8 @@ export function Services() {
                         </Heading>
                         </Box>
 
-                        <Box display='flex' justifyContent='space-between' alignItems='center'>
-                        <Box w={{lg: '60rem'}}>
+                        <Box display='flex' flexDirection={{sm: 'column-reverse', lg: 'row'}} justifyContent='space-between' alignItems={{lg:'center'}}>
+                        <Box w={{md: '100%', lg: '35rem', xl: '45rem', '2xl': '60rem'}}>
                         <Text fontSize='1.3rem' fontWeight='300' color='white' marginTop={5}>
                         A Escrituração contábil representa o conjunto de lançamentos contábeis. Trata-se do registro cronológico e específico da origem de todos os fatos que aconteceram na empresa para que seja possível controlar o seu patrimônio.
                         </Text>
@@ -215,8 +214,8 @@ export function Services() {
                         </Text>
                         </Box>
 
-                        <Box>
-                            <Image w='23rem' src='/images/escrituracao-contabil.svg'/>
+                        <Box marginBlock={{sm: '2rem', lg: '0rem'}}>
+                            <Image w={{sm: '100%', md: '23rem'}} src='/images/escrituracao-contabil.svg'/>
                         </Box>
                         </Box>
 
@@ -241,7 +240,7 @@ export function Services() {
                 </Container>
             </Box>
 
-            <Box paddingBlock={20}>
+            <Box paddingBlock={20} id='gestão-tributária'>
                 <Container maxW={{ md: '3xl', lg: '5xl', xl: '6xl', '2xl': '8xl'}}>
                     <Box>
                         <Box display='flex' marginBottom={6}>
@@ -261,11 +260,11 @@ export function Services() {
                         Além disso, uma boa gestão tributária diminui os riscos de irregularidades com os órgãos fiscais, trazendo maior segurança na quitação de suas obrigações.
                         </Text>
 
-                        <Box display='flex' justifyContent='space-between' alignItems='center'>
-                        <Box>
+                        <Box display='flex' flexDirection={{sm: 'column', lg: 'row'}} justifyContent='space-between' alignItems={{lg: 'center'}}>
+                        <Box marginBlock={{sm: '2rem', lg: '0rem'}}>
                             <Image src='/images/gestao-tributaria.svg'/>
                         </Box>
-                        <Box  w={{lg: '55rem'}}>
+                        <Box  w={{sm: '100%', lg: '26rem', xl: '35rem', '2xl': '55rem'}}>
                         <Text marginTop={3} fontSize='1.3rem' fontWeight='300' color='brand.gray'>
                         Conduzimos uma rotina de gestão tributária dentro da empresa, independente do porte ou segmento em que ela atua. Garantimos que todas as particularidades de sua atividade, cidade, estado e regime tributário serão levados em consideração.
                         </Text>
@@ -279,7 +278,7 @@ export function Services() {
                 </Container>
             </Box>
 
-            <Box className="black-gradient" marginTop={16} paddingTop={20} position='relative'>
+            <Box className="black-gradient" marginTop={16} paddingTop={20} position='relative' id='escrita-fiscal'>
                 <Container maxW={{ md: '3xl', lg: '5xl', xl: '6xl', '2xl': '8xl'}}>
                     <Box>
                         <Box display='flex' alignItems='center' marginBottom={6}>
@@ -289,7 +288,7 @@ export function Services() {
                         </Heading>
                         </Box>
 
-                        <Box display='flex' justifyContent='space-between' alignItems='center'>
+                        <Box display='flex' flexDirection={{sm: 'column-reverse', lg: 'row'}} justifyContent='space-between' alignItems={{lg:'center'}}>
                         <Box w={{lg: '60rem'}}>
                         <Text fontSize='1.3rem' fontWeight='300' color='white' marginTop={5}>
                         A escrita fiscal serve para comprovar as operações e receitas de compra e venda de mercadorias e de serviços prestados ou tomados. Todo negócio, independentemente do seu porte ou ramo de atuação, precisa realizar a escrita fiscal.
@@ -298,7 +297,7 @@ export function Services() {
                         A escrituração fiscal é um serviço de prestação de contas sobre as movimentações financeiras e tributárias que a maioria das empresas precisa ter com o Fisco. Isso inclui o seu faturamento, os impostos e outras informações que são do interesse do Estado.
                         </Text>
                         </Box>
-                        <Box>
+                        <Box display='flex' flexDirection={{sm: 'column', lg: 'row'}} justifyContent='space-between' alignItems={{lg: 'center'}}>
                             <Image src='/images/escrita-fiscal.png'/>
                         </Box>
                         </Box>
@@ -323,7 +322,7 @@ export function Services() {
                 </Box>
             </Box>
 
-            <Box paddingBlock={20}>
+            <Box paddingBlock={20} id='departamento-pessoal'>
                 <Container maxW={{ md: '3xl', lg: '5xl', xl: '6xl', '2xl': '8xl'}}>
                     <Box>
                         <Heading className='scroll-mt-10' ref={departamentopessoalHash} size='2xl' marginBottom={12}>
@@ -348,7 +347,7 @@ export function Services() {
             </Box>
 
 
-            <Box className="black-gradient" marginTop={16} paddingBlock={20}>
+            <Box className="black-gradient" marginTop={16} paddingBlock={20} id='gestão-societária'>
                 <Container maxW={{ md: '3xl', lg: '5xl', xl: '6xl', '2xl': '8xl'}}>
                     <Box>
                         <Heading className='scroll-mt-10' ref={gestaosocietariaHash} color='white' size='2xl' marginBottom={12}>
@@ -391,7 +390,7 @@ export function Services() {
                 </Container>
             </Box>
 
-            <Box paddingBlock={20}>
+            <Box paddingBlock={20} id='contabilidade'>
                 <Container maxW={{ md: '3xl', lg: '5xl', xl: '6xl', '2xl': '8xl'}}>
                     <Box>
                         <Heading className='scroll-mt-10' ref={contabilidadeHash} size='2xl' marginBottom={12}>
@@ -411,7 +410,7 @@ export function Services() {
                 </Container>
             </Box>
 
-            <Box className="black-gradient" marginTop={16} paddingBlock={20}>
+            <Box className="black-gradient" marginTop={16} paddingBlock={20} id='planejamento-estratégico'>
                 <Container maxW={{ md: '3xl', lg: '5xl', xl: '6xl', '2xl': '8xl'}}>
                     <Box>
                         <Heading className='scroll-mt-10' ref={planejamentoestrategicoHash} color='white' size='2xl' marginBottom={12}>

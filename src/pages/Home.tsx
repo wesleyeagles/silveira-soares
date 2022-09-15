@@ -1,4 +1,3 @@
-import React from 'react';
 import { useRef } from 'react'
 
 import { Box, Button, Container, Heading, Icon, Text } from "@chakra-ui/react";
@@ -20,7 +19,6 @@ import { Footer } from "../components/Footer";
 
 export function Home() {
 
-
     const nameInput = useRef<any>(null)
 
 
@@ -32,7 +30,62 @@ export function Home() {
 
         setTimeout(() => {
          nameInput.current.focus()
-        }, 500)
+        }, 500)   
+    }
+
+    const scrollTo1 = () => {
+        setTimeout(() => {
+            window.location.hash = "reengenharia"
+        }, 300)
+        
+    }
+
+    const scrollTo2 = () => {
+        setTimeout(() => {
+            window.location.hash = "escrituração-contábil"
+        }, 300)
+        
+    }
+
+    const scrollTo3 = () => {
+        setTimeout(() => {
+            window.location.hash = "gestão-tributária"
+        }, 300)
+        
+    }
+
+    const scrollTo4 = () => {
+        setTimeout(() => {
+            window.location.hash = "escrita-fiscal"
+        }, 300)
+        
+    }
+
+    const scrollTo5 = () => {
+        setTimeout(() => {
+            window.location.hash = "departamento-pessoal"
+        }, 300)
+        
+    }
+
+    const scrollTo6 = () => {
+        setTimeout(() => {
+            window.location.hash = "gestão-societária"
+        }, 300)
+        
+    }
+
+    const scrollTo7 = () => {
+        setTimeout(() => {
+            window.location.hash = "contabilidade"
+        }, 300)
+        
+    }
+
+    const scrollTo8 = () => {
+        setTimeout(() => {
+            window.location.hash = "planejamento-estratégico"
+        }, 300)
         
     }
 
@@ -93,7 +146,7 @@ export function Home() {
                             </Text>
                         </Box>
                         <Box display='flex' justifyContent='center'>
-                            <Link to=''>
+                            <Link onClick={scrollTo1} to='/servi%C3%A7os'>
                                 <Text color='brand.red' fontSize='1.2rem'>
                                 Acessar
                                 </Text>
@@ -111,7 +164,7 @@ export function Home() {
                             </Text>
                         </Box>
                         <Box display='flex' justifyContent='center'>
-                            <Link to=''>
+                            <Link  onClick={scrollTo2} to='/servi%C3%A7os'>
                                 <Text color='brand.red' fontSize='1.2rem'>
                                 Acessar
                                 </Text>
@@ -129,7 +182,7 @@ export function Home() {
                             </Text>
                         </Box>
                         <Box display='flex' justifyContent='center'>
-                            <Link to=''>
+                            <Link  onClick={scrollTo3} to='/servi%C3%A7os'>
                                 <Text color='brand.red' fontSize='1.2rem'>
                                 Acessar
                                 </Text>
@@ -147,7 +200,7 @@ export function Home() {
                             </Text>
                         </Box>
                         <Box display='flex' justifyContent='center'>
-                            <Link to=''>
+                            <Link  onClick={scrollTo4} to='/servi%C3%A7os'>
                                 <Text color='brand.red' fontSize='1.2rem'>
                                 Acessar
                                 </Text>
@@ -165,7 +218,7 @@ export function Home() {
                             </Text>
                         </Box>
                         <Box display='flex' justifyContent='center'>
-                            <Link to=''>
+                            <Link  onClick={scrollTo5} to='/servi%C3%A7os'>
                                 <Text color='brand.red' fontSize='1.2rem'>
                                 Acessar
                                 </Text>
@@ -183,7 +236,7 @@ export function Home() {
                             </Text>
                         </Box>
                         <Box display='flex' justifyContent='center'>
-                            <Link to=''>
+                            <Link  onClick={scrollTo6} to='/servi%C3%A7os'>
                                 <Text color='brand.red' fontSize='1.2rem'>
                                 Acessar
                                 </Text>
@@ -201,7 +254,7 @@ export function Home() {
                             </Text>
                         </Box>
                         <Box display='flex' justifyContent='center'>
-                            <Link to=''>
+                            <Link  onClick={scrollTo7} to='/servi%C3%A7os'>
                                 <Text color='brand.red' fontSize='1.2rem'>
                                 Acessar
                                 </Text>
@@ -219,7 +272,7 @@ export function Home() {
                             </Text>
                         </Box>
                         <Box display='flex' justifyContent='center'>
-                            <Link to=''>
+                            <Link  onClick={scrollTo8} to='/servi%C3%A7os'>
                                 <Text color='brand.red' fontSize='1.2rem'>
                                 Acessar
                                 </Text>

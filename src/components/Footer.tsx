@@ -120,8 +120,8 @@ export function Footer({foawardRef}: any) {
                         </form>
                     </Box>
 
-                    <Box w={{sm: '100%', md: '30%', lg: '25%', xl: '33%', '2xl': '33%'}} marginTop={{sm: '5rem', lg: '0rem'}}>
-                    <Box paddingLeft={{ lg: '3rem', xl:'8rem', '2xl': '8rem'}}>
+                    <Box w={{sm: '100%', md: '33%', lg: '25%', xl: '33%', '2xl': '33%'}} marginTop={{sm: '5rem', lg: '0rem'}}>
+                    <Box paddingLeft={{md: '1.9rem', lg: '1.8rem', xl:'8rem', '2xl': '8rem'}}>
                     <Heading w='18rem' as='h3' color='white' size='lg'>
                             Nosso horários
                     </Heading>
