@@ -2,8 +2,11 @@ import { useRef } from 'react'
 import { Box, Button, Container, Heading, Icon, Image, ListItem, Text, UnorderedList } from "@chakra-ui/react";
 import { FaCoffee } from 'react-icons/fa'
 import { FiEdit3 } from 'react-icons/fi'
-import { BsCashCoin } from 'react-icons/bs'
+import { BsCashCoin, BsPersonLinesFill } from 'react-icons/bs'
 import { AiTwotoneContainer } from 'react-icons/ai'
+import { IoIosPeople } from 'react-icons/io'
+import { MdOutlineAttachMoney } from 'react-icons/md'
+import { HiOutlinePresentationChartBar } from 'react-icons/hi'
 import { Navbar } from "../components/Navbar";
 
 import { BsArrowDownShort } from 'react-icons/bs'
@@ -325,16 +328,29 @@ export function Services() {
             <Box paddingBlock={20} id='departamento-pessoal'>
                 <Container maxW={{ md: '3xl', lg: '5xl', xl: '6xl', '2xl': '8xl'}}>
                     <Box>
-                        <Heading className='scroll-mt-10' ref={departamentopessoalHash} size='2xl' marginBottom={12}>
+                        <Box display='flex' alignItems='center' marginBottom={6} >
+                        <Icon marginRight={3} as={BsPersonLinesFill} color='#A00000' w={47} h={47}/>
+                        <Heading className='scroll-mt-10' ref={departamentopessoalHash} size='2xl' >
                             Departamento Pessoal
                         </Heading>
+                        </Box>
 
+
+                        <Box display='flex' flexDirection={{sm: 'column-reverse', lg: 'row'}} justifyContent='space-between' alignItems={{lg:'center'}}>
+                        <Box w={{lg: '62rem'}}>
                         <Text fontSize='1.3rem' fontWeight='300' color='brand.gray' marginTop={5}>
                         O Departamento Pessoal é uma área técnica especializada na gestão dos funcionários de uma empresa. São atribuições do Departamento Pessoal gerenciar a folha de pagamento, admissões e demissões, eSocial, férias, benefícios, atestados e afastamentos, registro de ponto e passivos trabalhistas.
                         </Text>
                         <Text marginTop={3} fontSize='1.3rem' fontWeight='300' color='brand.gray'>
                         O principal objetivo do Departamento Pessoal é cumprir a legislação e as normas trabalhistas que estão em vigor.
                         </Text>
+                        </Box>
+
+                        <Box display='flex' flexDirection={{sm: 'column', lg: 'row'}} justifyContent='space-between' alignItems={{lg: 'center'}}>
+                            <Image w={{lg: '20rem'}} src='/images/departamento-pessoal.png'/>
+                        </Box>
+
+                        </Box>
                         <Text marginTop={3} fontSize='1.3rem' fontWeight='300' color='brand.gray'>
                         Ou seja, o setor está encarregado principalmente das questões burocráticas e trabalhistas relacionadas aos colaboradores, garantindo a correta emissão e gerenciamento de documentos. Dessa forma, há mais agilidade e eficiência no controle desses fatores. Além disso, é um serviço fundamental para o cumprimento das normas trabalhistas.
                         </Text>
@@ -347,12 +363,15 @@ export function Services() {
             </Box>
 
 
-            <Box className="black-gradient" marginTop={16} paddingBlock={20} id='gestão-societária'>
+            <Box className="black-gradient" marginTop={16} paddingTop={20} id='gestão-societária'>
                 <Container maxW={{ md: '3xl', lg: '5xl', xl: '6xl', '2xl': '8xl'}}>
                     <Box>
-                        <Heading className='scroll-mt-10' ref={gestaosocietariaHash} color='white' size='2xl' marginBottom={12}>
+                        <Box display='flex' alignItems='center' marginBottom={6} >
+                        <Icon marginRight={3} as={IoIosPeople} color='white' w={47} h={47}/>
+                        <Heading className='scroll-mt-10' ref={gestaosocietariaHash} color='white' size='2xl'>
                             Gestão Societária
                         </Heading>
+                        </Box>
 
                         <Text fontSize='1.3rem' fontWeight='300' color='white' marginTop={5}>
                         A Gestão Societária é um serviço realizado para orientar os clientes nas questões empresariais, realizando tarefas ou indicando a melhor solução para os problemas que possam surgir. Assim, você garante o atendimento às exigências dos órgãos municipais, estaduais e federais.
@@ -388,34 +407,54 @@ export function Services() {
 
                     </Box>
                 </Container>
+                <Box marginTop={10}>
+                    <Image src='/images/gestao-societaria.png'/>
+                </Box>
             </Box>
 
             <Box paddingBlock={20} id='contabilidade'>
                 <Container maxW={{ md: '3xl', lg: '5xl', xl: '6xl', '2xl': '8xl'}}>
                     <Box>
-                        <Heading className='scroll-mt-10' ref={contabilidadeHash} size='2xl' marginBottom={12}>
+                        <Box display='flex' alignItems='center' marginBottom={6} >
+                        <Icon marginRight={3} as={MdOutlineAttachMoney} color='#A00000' w={47} h={47}/>
+                        <Heading className='scroll-mt-10' ref={contabilidadeHash} size='2xl'>
                             Contabilidade
                         </Heading>
+                        </Box>
 
                         <Text fontSize='1.3rem' fontWeight='300' color='brand.gray' marginTop={5}>
                         A contabilidade é a fonte das informações para que o empreendedor tenha crescimento de forma segura, em conformidade com as leis e com ampla visão sobre seu negócio, já que inclui aspectos fiscais, tributários, previdenciários, legais e trabalhistas.
                         </Text>
+                        <Box display='flex' flexDirection={{sm: 'column-reverse', lg: 'row'}} justifyContent='space-between' alignItems={{lg:'center'}}>
+
+                        <Box marginBlock={{sm: '2rem', lg: '2rem'}}>
+                            <Image w={{sm: '100%', md: '15rem'}} src='/images/contabilidade.png'/>
+                        </Box>
+
+                        <Box w={{lg: '69rem'}}>
+                        
                         <Text marginTop={3} fontSize='1.3rem' fontWeight='300' color='brand.gray'>
                         Além disso, a contabilidade é um importante alicerce do processo de gestão empresarial, já que fornece dados importantes para tomadas de decisões, definindo assim, diversos rumos que a empresa deverá seguir.
                         </Text>
                         <Text marginTop={3} fontSize='1.3rem' fontWeight='300' color='brand.gray'>
                         Com a Silveira Soares, sua empresa terá assessoria completa de profissionais atualizados com a legislação vigente, permitindo um alinhamento completo do seu negócio com as leis contábeis do país.
                         </Text>
+                        </Box>
+                        </Box>
                     </Box>
                 </Container>
             </Box>
 
-            <Box className="black-gradient" marginTop={16} paddingBlock={20} id='planejamento-estratégico'>
+            <Box className="black-gradient" marginTop={16} paddingTop={20} id='planejamento-estratégico'>
                 <Container maxW={{ md: '3xl', lg: '5xl', xl: '6xl', '2xl': '8xl'}}>
                     <Box>
-                        <Heading className='scroll-mt-10' ref={planejamentoestrategicoHash} color='white' size='2xl' marginBottom={12}>
+
+                        <Box display='flex' alignItems='center' marginBottom={6} >
+                        <Icon marginRight={3} as={HiOutlinePresentationChartBar} color='#FFF' w={47} h={47}/>
+                        <Heading className='scroll-mt-10' ref={planejamentoestrategicoHash} color='white' size='2xl'>
                             Planejamento Estratégico
                         </Heading>
+                        </Box>
 
                         <Text fontSize='1.3rem' fontWeight='300' color='white' marginTop={5}>
                         Assim como a Gestão Tributária, o Planejamento Estratégico pode ser elaborado através das informações obtidas pela contabilidade.
@@ -438,6 +477,9 @@ export function Services() {
 
                     </Box>
                 </Container>
+                <Box marginTop={10}>
+                    <Image src='/images/planejamento-estrategico.png'/>
+                </Box>
             </Box>
 
             <Box h='40rem' position='relative'>
