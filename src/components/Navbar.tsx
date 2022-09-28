@@ -25,31 +25,31 @@ export function Navbar() {
 
                     <Box display={{sm: 'none', md: 'block'}}>
                         <nav className="flex items-center">
-                            <Link to='/'>
+                            <Link to='/site-novo'>
                                 <Text color='white' fontWeight={600} marginInline={3}>
                                 Inicio
                                 </Text>
                             </Link>
 
-                            <Link to='/servi%C3%A7os'>
+                            <Link to='/site-novo/servi%C3%A7os'>
                                 <Text color='white' fontWeight={600} marginInline={3}>
                                 Serviços
                                 </Text>
                             </Link>
 
-                            <Link to='/quem-somos'>
+                            <Link to='/site-novo/quem-somos'>
                                 <Text color='white' fontWeight={600} marginInline={3}>
                                 Quem Somos
                                 </Text>
                             </Link>
 
-                            <Link to='/contato'>
+                            <Link to='/site-novo/contato'>
                                 <Text color='white' fontWeight={600} marginInline={3}>
                                 Contato
                                 </Text>
                             </Link>
 
-                            <Link to='/reengenharia'>
+                            <Link to='/site-novo/reengenharia'>
                                 <Button  marginLeft={3} bg='brand.red' _hover={{ bg: 'brand.hover.red'}}>
                                     <Text color='white'>
                                     Baixar E-book
@@ -59,29 +59,55 @@ export function Navbar() {
                         </nav>
                     </Box>
 
-                    <Box ref={btnRef} onClick={onOpen} display={{sm: 'block', md: 'none'}}>
+                    <Box cursor='pointer' ref={btnRef} onClick={onOpen} display={{sm: 'block', md: 'none'}}>
                         <GiHamburgerMenu color="#FFF" size={30}/>
                     </Box>
                 </Box>
             </Container>
 
             <Drawer
+        
         isOpen={isOpen}
         placement='right'
         onClose={onClose}
         finalFocusRef={btnRef}
       >
         <DrawerOverlay />
-        <DrawerContent>
-          <DrawerCloseButton />
+        <DrawerContent bg='brand.red'>
+          <DrawerCloseButton stroke='#FFF' color='#FFF'/>
           <DrawerHeader>
           <Link to=''>
-            <Button w='12rem' h='3rem'  marginLeft={3} bg='brand.red' _hover={{ bg: 'brand.hover.red'}}>
-                <Text color='white'>
+            <Button w='12rem' h='3rem'  marginLeft={3} bg='#FFF' color='brand.gray'  _hover={{ bg: 'brand.gray', color: '#FFF'}}>
                 Baixar E-book
-                </Text>
             </Button>
           </Link>
+            <Box marginLeft={3} marginTop={6}>
+            <nav className="flex flex-col">
+            <Link to='/site-novo'>
+                <Text color='#FFF' fontWeight={600} marginBlock={3}>
+                Inicio
+                </Text>
+            </Link>
+
+            <Link to='/site-novo/servi%C3%A7os'>
+                <Text color='#FFF' fontWeight={600} marginBlock={3}>
+                Serviços
+                </Text>
+            </Link>
+
+            <Link to='/site-novo/quem-somos'>
+                <Text color='#FFF' fontWeight={600} marginBlock={3}>
+                Quem Somos
+                </Text>
+            </Link>
+
+            <Link to='/site-novo/contato'>
+                <Text color='#FFF' fontWeight={600} marginBlock={3}>
+                Contato
+                </Text>
+            </Link>
+            </nav>
+            </Box>
           </DrawerHeader>
 
           <DrawerBody>

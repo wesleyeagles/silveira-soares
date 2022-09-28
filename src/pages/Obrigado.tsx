@@ -15,7 +15,7 @@ export function Obrigado() {
 
                     <Box>
                         <nav className="flex items-center">
-                             <Link to='/'>
+                             <Link to='/site-novo'>
                                 <Button  marginLeft={3} bg='brand.red' _hover={{ bg: 'brand.hover.red'}}>
                                     <Text color='white'>
                                     Voltar ao site

@@ -7,7 +7,8 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 // import required modules
-import { Pagination, Autoplay } from "swiper";
+import { Pagination } from "swiper";
+import { Link } from 'react-router-dom';
 
 export function Carousel() {
 
@@ -16,14 +17,10 @@ export function Carousel() {
     return (
         <Swiper
         parallax
-        autoplay={{
-            delay: 3500,
-            disableOnInteraction: false,
-          }}
         pagination={{
             clickable: true,
           }}
-        modules={[Pagination, Autoplay]}
+        modules={[Pagination]}
         spaceBetween={0}
         slidesPerView={1}
         onSlideChange={() => console.log('slide change')}
@@ -41,9 +38,11 @@ export function Carousel() {
                         <Heading paddingBottom={20} color='red' size={{sm: '3xl', md: '4xl'}}>
                         SUPERMERCADOS
                         </Heading>
+                        <Link to='/site-novo/reengenharia'>
                         <Button bg='brand.red' color='white' w='10rem' h='4rem' fontSize='xl' _hover={{ bg: 'brand.hover.red'}}>
                             Baixar E-book
                         </Button>
+                        </Link>
                     </Container>
                 </Box>
             </SwiperSlide>

@@ -1,9 +1,14 @@
 import { useRef } from 'react'
+import { Helmet } from 'react-helmet'
 
 import { Box, Button, Container, Heading, Icon, Text } from "@chakra-ui/react";
 import { Carousel } from "../components/Carousel";
 import { Navbar } from "../components/Navbar";
-import { Player, Video } from '@vime/react';
+import {
+    Player,
+    Dailymotion,
+    Youtube,
+  } from '@vime/react';
 
 import { AiOutlineFileDone } from 'react-icons/ai'
 import { FaCoffee, FaMoneyCheck } from 'react-icons/fa'
@@ -16,6 +21,7 @@ import { SiMicrostrategy } from 'react-icons/si'
 
 import { Link } from "react-router-dom";
 import { Footer } from "../components/Footer";
+import TapSidesToSeek from '../components/TapSidesToSeek';
 
 export function Home() {
 
@@ -92,10 +98,15 @@ export function Home() {
 
     return (
         <Box>
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>My Title</title>
+                <link rel="canonical" href="http://mysite.com/example" />
+            </Helmet>
             <Navbar />
             <Carousel />
             <Container maxW={{ md: '3xl', lg: '5xl', xl: '6xl', '2xl': '8xl'}}>
-            <Box display='flex' flexDirection={{ sm: 'column', lg: 'row'}} justifyContent={{ sm: 'center', lg: 'space-between'}} alignItems='center' h='50rem'>
+            <Box display='flex' flexDirection={{ sm: 'column', lg: 'row'}} justifyContent={{ sm: 'center', lg: 'space-between'}}  paddingBlock={44}>
                 <Box>
                     <Heading color='brand.gray' as='h2' size='3xl' w={{ lg: '28rem', xl: '38rem', '2xl': '38rem'}}>
                         Queremos <Text as='span' color='brand.red'>trabalhar</Text> para você também!
@@ -105,26 +116,11 @@ export function Home() {
                     </Text>
                 </Box>
 
-                <Box w={{ sm: '100%', lg: '45rem', xl: '40rem', '2xl': '40rem'}} marginTop={{ sm: '4rem', lg: '0rem'}}>
-                <Player className="w-full" controls>
-                    <Video>
-                        <source data-src="/videos/videohome.mp4" type="video/mp4" />
-                        <track
-                        default
-                        kind="subtitles"
-                        src="/media/subs/en.vtt"
-                        srcLang="en"
-                        label="English"
-                        />
-                        <track
-                        kind="captions"
-                        src="/media/caps/es.vtt"
-                        srcLang="es"
-                        label="Spanish"
-                        />
-                    </Video>
-                    {/* ... */}
-                    </Player>
+                <Box w={{ sm: '100%', lg: '45rem', xl: '40rem', '2xl': '40rem'}} marginTop={{ sm: '4rem', lg: '0rem'}} borderRadius={6} overflow='hidden'>
+                <Player controls>
+                <Youtube videoId="vXZG3JQZHi4" />
+                {/* ... */}
+                </Player>
                 </Box>
             </Box>
             </Container>
@@ -146,7 +142,7 @@ export function Home() {
                             </Text>
                         </Box>
                         <Box display='flex' justifyContent='center'>
-                            <Link onClick={scrollTo1} to='/servi%C3%A7os'>
+                            <Link onClick={scrollTo1} to='/site-novo/servi%C3%A7os'>
                                 <Text color='brand.red' fontSize='1.2rem'>
                                 Acessar
                                 </Text>
@@ -164,7 +160,7 @@ export function Home() {
                             </Text>
                         </Box>
                         <Box display='flex' justifyContent='center'>
-                            <Link  onClick={scrollTo2} to='/servi%C3%A7os'>
+                            <Link  onClick={scrollTo2} to='/site-novo/servi%C3%A7os'>
                                 <Text color='brand.red' fontSize='1.2rem'>
                                 Acessar
                                 </Text>
@@ -182,7 +178,7 @@ export function Home() {
                             </Text>
                         </Box>
                         <Box display='flex' justifyContent='center'>
-                            <Link  onClick={scrollTo3} to='/servi%C3%A7os'>
+                            <Link  onClick={scrollTo3} to='/site-novo/servi%C3%A7os'>
                                 <Text color='brand.red' fontSize='1.2rem'>
                                 Acessar
                                 </Text>
@@ -200,7 +196,7 @@ export function Home() {
                             </Text>
                         </Box>
                         <Box display='flex' justifyContent='center'>
-                            <Link  onClick={scrollTo4} to='/servi%C3%A7os'>
+                            <Link  onClick={scrollTo4} to='/site-novo/servi%C3%A7os'>
                                 <Text color='brand.red' fontSize='1.2rem'>
                                 Acessar
                                 </Text>
@@ -218,7 +214,7 @@ export function Home() {
                             </Text>
                         </Box>
                         <Box display='flex' justifyContent='center'>
-                            <Link  onClick={scrollTo5} to='/servi%C3%A7os'>
+                            <Link  onClick={scrollTo5} to='/site-novo/servi%C3%A7os'>
                                 <Text color='brand.red' fontSize='1.2rem'>
                                 Acessar
                                 </Text>
@@ -236,7 +232,7 @@ export function Home() {
                             </Text>
                         </Box>
                         <Box display='flex' justifyContent='center'>
-                            <Link  onClick={scrollTo6} to='/servi%C3%A7os'>
+                            <Link  onClick={scrollTo6} to='/site-novo/servi%C3%A7os'>
                                 <Text color='brand.red' fontSize='1.2rem'>
                                 Acessar
                                 </Text>
@@ -254,7 +250,7 @@ export function Home() {
                             </Text>
                         </Box>
                         <Box display='flex' justifyContent='center'>
-                            <Link  onClick={scrollTo7} to='/servi%C3%A7os'>
+                            <Link  onClick={scrollTo7} to='/site-novo/servi%C3%A7os'>
                                 <Text color='brand.red' fontSize='1.2rem'>
                                 Acessar
                                 </Text>
@@ -272,7 +268,7 @@ export function Home() {
                             </Text>
                         </Box>
                         <Box display='flex' justifyContent='center'>
-                            <Link  onClick={scrollTo8} to='/servi%C3%A7os'>
+                            <Link  onClick={scrollTo8} to='/site-novo/servi%C3%A7os'>
                                 <Text color='brand.red' fontSize='1.2rem'>
                                 Acessar
                                 </Text>

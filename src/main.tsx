@@ -31,7 +31,7 @@ const theme = extendTheme({
 import styled from "@emotion/styled";
 
 const AppContainer = styled.div`
-  font-family: "Open Sans";
+  font-family: "Open Sans"!important;
 `;
 
 
