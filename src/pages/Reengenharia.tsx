@@ -239,19 +239,19 @@ export const Reengenharia = () => {
 
             <Box className="styled-scrollbar" marginBottom='150px' paddingBottom={{sm: '32px', md: '0px'}} w='100%' display='flex' justifyContent={{md: 'center'}} marginTop='80px' flexWrap={{md: 'wrap', xl: 'nowrap'}} overflow={{sm: 'auto', md: 'hidden'}} gap={{sm: '16px', md: '0px'}}>
                 <Box flex={{sm: 'none'}} marginRight={{md: '6px', lg: '16px', xl: '16px'}} w={{sm: '280px', md: '49%', lg: '380px', xl: '280px'}} h='430px' background='linear-gradient(180deg, rgba(0, 0, 0, 0.02) 0%, rgba(0, 0, 0, 0.2) 100%)'>
-
+                    <Box w='100%' h='100%' as='video' controls={true} src='/videos/REELS1.mp4' objectFit='cover'/>
                 </Box>
 
                 <Box flex={{sm: 'none'}} marginLeft={{md: '6px', lg: '16px', xl: '0px'}} marginInline={{xl: '16px'}} w={{sm: '280px', md: '49%', lg: '380px', xl: '280px'}} h='430px' background='linear-gradient(180deg, rgba(0, 0, 0, 0.02) 0%, rgba(0, 0, 0, 0.2) 100%)'>
-
+                    <Box w='100%' h='100%' as='video' controls={true} src='/videos/REELS2.mp4' objectFit='cover'/>
                 </Box>
 
                 <Box flex={{sm: 'none'}} marginTop={{md: '12px', lg: '32px', xl: '0px'}} marginRight={{md: '6px', lg: '16px', xl: '16px'}} marginInline={{xl: '16px'}} w={{sm: '280px', md: '49%', lg: '380px', xl: '280px'}} h='430px' background='linear-gradient(180deg, rgba(0, 0, 0, 0.02) 0%, rgba(0, 0, 0, 0.2) 100%)'>
-
+                    <Box w='100%' h='100%' as='video' controls={true} src='/videos/REELS3.mp4' objectFit='cover'/>
                 </Box>
 
                 <Box flex={{sm: 'none'}} marginTop={{md: '12px', lg: '32px', xl: '0px'}} marginLeft={{md: '6px', lg: '16px', xl: '16px'}} w={{sm: '280px', md: '49%', lg: '380px', xl: '280px'}} h='430px' background='linear-gradient(180deg, rgba(0, 0, 0, 0.02) 0%, rgba(0, 0, 0, 0.2) 100%)'>
-
+                    <Box w='100%' h='100%' as='video' controls={true} src='/videos/REELS4.mp4' objectFit='cover'/>
                 </Box>
             </Box>
         </Box>
