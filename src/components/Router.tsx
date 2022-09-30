@@ -10,12 +10,12 @@ export function Router() {
 
     return (
         <Routes>
-            <Route path="/site-novo" element={<Home />} />
-            <Route path="/site-novo/servi%C3%A7os" element={<Services />} />
-            <Route path="/site-novo/quem-somos" element={<WhoWeAre />} />
-            <Route path="/site-novo/contato" element={<Contact />} />
-            <Route path="/site-novo/reengenharia" element={<Reengenharia />} />
-            <Route path="/site-novo/obrigado" element={<Obrigado />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/servi%C3%A7os" element={<Services />} />
+            <Route path="/quem-somos" element={<WhoWeAre />} />
+            <Route path="/contato" element={<Contact />} />
+            <Route path="/reengenharia" element={<Reengenharia />} />
+            <Route path="/obrigado" element={<Obrigado />} />
         </Routes>
     )
 }

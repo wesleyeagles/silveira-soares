@@ -3,7 +3,7 @@ import { BsWhatsapp } from 'react-icons/bs'
 
 export function WhatsappButton() {
     return (
-        <a target='_blank' href="">
+        <a target='_blank' href="https://api.whatsapp.com/send/?phone=5551981360568&text&type=phone_number&app_absent=0">
         <Box className="fixed bottom-6 right-6 border-green-500 border z-50 w-[60px] h-[60px] rounded-full pulse-anima"></Box>
         <Box className="fixed bottom-6 right-6 border-green-500 border z-50 w-[60px] h-[60px] rounded-full pulse-anima2"></Box>
         <Box className="fixed bottom-6 right-6 border-green-500 border z-50 w-[60px] h-[60px] rounded-full pulse-anima3"></Box>

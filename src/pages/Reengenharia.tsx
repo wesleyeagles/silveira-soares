@@ -80,7 +80,7 @@ export const Reengenharia = () => {
         <Box bg='#FFF' h='80px'>
             <Box maxW={{sm: '90%', md: '720px', lg: '920px', xl: '1215px'}} margin='0 auto' display='flex' h='100%' alignItems='center' justifyContent='space-between'>
                 <Box>
-                    <Link to='/site-novo'>
+                    <Link to='/'>
                     <Image src='/images/logo.png'/>
                     </Link>
                 </Box>
@@ -90,7 +90,7 @@ export const Reengenharia = () => {
                         Ebook gratuito
                     </Button>
 
-                    <Link to='/site-novo'>
+                    <Link to='/'>
                         <Button border='solid 1px #A80000' bg='#FFF' color='#A80000' fontSize='16px' w='176px' h='42px' _hover={{color: '#FFF', bg: '#A80000'}}>
                             Ir para o site
                         </Button>
@@ -109,7 +109,7 @@ export const Reengenharia = () => {
                         </Button>
                     </MenuItem>
                     <MenuItem>
-                    <Link to='/site-novo'>
+                    <Link to='/'>
                         <Button border='solid 1px #A80000' bg='#FFF' color='#A80000' fontSize='16px' w='176px' h='42px' _hover={{color: '#FFF', bg: '#A80000'}}>
                             Ir para o site
                         </Button>

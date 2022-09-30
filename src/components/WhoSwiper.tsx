@@ -23,7 +23,7 @@ export function WhoSwiper() {
             
             >
                 <SwiperSlide className="whoSlide-single">
-                    <Image w='100px' h='100px' borderRadius={100} src='/site-novo/images/foto-lisandro.png'/>
+                    <Image w='100px' h='100px' borderRadius={100} src='/images/foto-lisandro.png'/>
                     <Box display='flex' flexDirection='column' gap={2}>
                     <Heading as='span' size='md' color='#FFF'>Lisandro Silveira Soares</Heading>
                     <Text color='#FFF'>CEO</Text>
@@ -42,7 +42,7 @@ export function WhoSwiper() {
                 </SwiperSlide>
 
                 <SwiperSlide className="whoSlide-single">
-                <Image w='100px' h='100px' borderRadius={100} src='/site-novo/images/foto-cristiane.png'/>
+                <Image w='100px' h='100px' borderRadius={100} src='/images/foto-cristiane.png'/>
                     <Box display='flex' flexDirection='column' gap={2}>
                     <Heading as='span' size='md' color='#FFF'>Cristiane Silveira Soares</Heading>
                     <Text color='#FFF'>CEO</Text>

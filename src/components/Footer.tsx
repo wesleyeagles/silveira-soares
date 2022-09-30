@@ -64,7 +64,8 @@ export function Footer({foawardRef}: any) {
                             e-mail para: <strong>rh@silveirasoares.com.br</strong>
                         </Text>
                     </Box>
-
+                    
+                    {/* 177.12.171.195 */}
                     <Box w={{sm: '100%', md: '60%', lg: '40%', xl: '33%', '2xl': '33%'}} marginTop={{sm: '5rem', lg: '0rem'}}>
                         <form action="">
                         <Stack>

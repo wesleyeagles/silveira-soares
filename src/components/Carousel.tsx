@@ -38,7 +38,7 @@ export function Carousel() {
                         <Heading paddingBottom={20} color='red' size={{sm: '3xl', md: '4xl'}}>
                         SUPERMERCADOS
                         </Heading>
-                        <Link to='/site-novo/reengenharia'>
+                        <Link to='/reengenharia'>
                         <Button bg='brand.red' color='white' w='10rem' h='4rem' fontSize='xl' _hover={{ bg: 'brand.hover.red'}}>
                             Baixar E-book
                         </Button>

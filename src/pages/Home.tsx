@@ -21,7 +21,6 @@ import { SiMicrostrategy } from 'react-icons/si'
 
 import { Link } from "react-router-dom";
 import { Footer } from "../components/Footer";
-import TapSidesToSeek from '../components/TapSidesToSeek';
 
 export function Home() {
 
@@ -48,49 +47,49 @@ export function Home() {
 
     const scrollTo2 = () => {
         setTimeout(() => {
-            window.location.hash = "escrituração-contábil"
+            window.location.hash = "reengenharia"
         }, 300)
         
     }
 
     const scrollTo3 = () => {
         setTimeout(() => {
-            window.location.hash = "gestão-tributária"
+            window.location.hash = "reengenharia"
         }, 300)
         
     }
 
     const scrollTo4 = () => {
         setTimeout(() => {
-            window.location.hash = "escrita-fiscal"
+            window.location.hash = "reengenharia"
         }, 300)
         
     }
 
     const scrollTo5 = () => {
         setTimeout(() => {
-            window.location.hash = "departamento-pessoal"
+            window.location.hash = "reengenharia"
         }, 300)
         
     }
 
     const scrollTo6 = () => {
         setTimeout(() => {
-            window.location.hash = "gestão-societária"
+            window.location.hash = "reengenharia"
         }, 300)
         
     }
 
     const scrollTo7 = () => {
         setTimeout(() => {
-            window.location.hash = "contabilidade"
+            window.location.hash = "reengenharia"
         }, 300)
         
     }
 
     const scrollTo8 = () => {
         setTimeout(() => {
-            window.location.hash = "planejamento-estratégico"
+            window.location.hash = "reengenharia"
         }, 300)
         
     }
@@ -100,8 +99,7 @@ export function Home() {
         <Box>
             <Helmet>
                 <meta charSet="utf-8" />
-                <title>My Title</title>
-                <link rel="canonical" href="http://mysite.com/example" />
+                <title>Silveira Soares</title>
             </Helmet>
             <Navbar />
             <Carousel />
@@ -142,7 +140,7 @@ export function Home() {
                             </Text>
                         </Box>
                         <Box display='flex' justifyContent='center'>
-                            <Link onClick={scrollTo1} to='/site-novo/servi%C3%A7os'>
+                            <Link onClick={scrollTo1} to='/servi%C3%A7os'>
                                 <Text color='brand.red' fontSize='1.2rem'>
                                 Acessar
                                 </Text>
@@ -160,7 +158,7 @@ export function Home() {
                             </Text>
                         </Box>
                         <Box display='flex' justifyContent='center'>
-                            <Link  onClick={scrollTo2} to='/site-novo/servi%C3%A7os'>
+                            <Link  onClick={scrollTo2} to='/servi%C3%A7os'>
                                 <Text color='brand.red' fontSize='1.2rem'>
                                 Acessar
                                 </Text>
@@ -178,7 +176,7 @@ export function Home() {
                             </Text>
                         </Box>
                         <Box display='flex' justifyContent='center'>
-                            <Link  onClick={scrollTo3} to='/site-novo/servi%C3%A7os'>
+                            <Link  onClick={scrollTo3} to='/servi%C3%A7os'>
                                 <Text color='brand.red' fontSize='1.2rem'>
                                 Acessar
                                 </Text>
@@ -196,7 +194,7 @@ export function Home() {
                             </Text>
                         </Box>
                         <Box display='flex' justifyContent='center'>
-                            <Link  onClick={scrollTo4} to='/site-novo/servi%C3%A7os'>
+                            <Link  onClick={scrollTo4} to='/servi%C3%A7os'>
                                 <Text color='brand.red' fontSize='1.2rem'>
                                 Acessar
                                 </Text>
@@ -214,7 +212,7 @@ export function Home() {
                             </Text>
                         </Box>
                         <Box display='flex' justifyContent='center'>
-                            <Link  onClick={scrollTo5} to='/site-novo/servi%C3%A7os'>
+                            <Link  onClick={scrollTo5} to='/servi%C3%A7os'>
                                 <Text color='brand.red' fontSize='1.2rem'>
                                 Acessar
                                 </Text>
@@ -232,7 +230,7 @@ export function Home() {
                             </Text>
                         </Box>
                         <Box display='flex' justifyContent='center'>
-                            <Link  onClick={scrollTo6} to='/site-novo/servi%C3%A7os'>
+                            <Link  onClick={scrollTo6} to='/servi%C3%A7os'>
                                 <Text color='brand.red' fontSize='1.2rem'>
                                 Acessar
                                 </Text>
@@ -250,7 +248,7 @@ export function Home() {
                             </Text>
                         </Box>
                         <Box display='flex' justifyContent='center'>
-                            <Link  onClick={scrollTo7} to='/site-novo/servi%C3%A7os'>
+                            <Link  onClick={scrollTo7} to='/servi%C3%A7os'>
                                 <Text color='brand.red' fontSize='1.2rem'>
                                 Acessar
                                 </Text>
@@ -268,7 +266,7 @@ export function Home() {
                             </Text>
                         </Box>
                         <Box display='flex' justifyContent='center'>
-                            <Link  onClick={scrollTo8} to='/site-novo/servi%C3%A7os'>
+                            <Link  onClick={scrollTo8} to='/servi%C3%A7os'>
                                 <Text color='brand.red' fontSize='1.2rem'>
                                 Acessar
                                 </Text>

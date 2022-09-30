@@ -25,31 +25,31 @@ export function Navbar() {
 
                     <Box display={{sm: 'none', md: 'block'}}>
                         <nav className="flex items-center">
-                            <Link to='/site-novo'>
+                            <Link to='/'>
                                 <Text color='white' fontWeight={600} marginInline={3}>
                                 Inicio
                                 </Text>
                             </Link>
 
-                            <Link to='/site-novo/servi%C3%A7os'>
+                            <Link to='/servi%C3%A7os'>
                                 <Text color='white' fontWeight={600} marginInline={3}>
                                 Serviços
                                 </Text>
                             </Link>
 
-                            <Link to='/site-novo/quem-somos'>
+                            <Link to='/quem-somos'>
                                 <Text color='white' fontWeight={600} marginInline={3}>
                                 Quem Somos
                                 </Text>
                             </Link>
 
-                            <Link to='/site-novo/contato'>
+                            <Link to='/contato'>
                                 <Text color='white' fontWeight={600} marginInline={3}>
                                 Contato
                                 </Text>
                             </Link>
 
-                            <Link to='/site-novo/reengenharia'>
+                            <Link to='/reengenharia'>
                                 <Button  marginLeft={3} bg='brand.red' _hover={{ bg: 'brand.hover.red'}}>
                                     <Text color='white'>
                                     Baixar E-book
@@ -76,32 +76,32 @@ export function Navbar() {
         <DrawerContent bg='brand.red'>
           <DrawerCloseButton stroke='#FFF' color='#FFF'/>
           <DrawerHeader>
-          <Link to=''>
+          <Link to='/reengenharia'>
             <Button w='12rem' h='3rem'  marginLeft={3} bg='#FFF' color='brand.gray'  _hover={{ bg: 'brand.gray', color: '#FFF'}}>
                 Baixar E-book
             </Button>
           </Link>
             <Box marginLeft={3} marginTop={6}>
             <nav className="flex flex-col">
-            <Link to='/site-novo'>
+            <Link to='/'>
                 <Text color='#FFF' fontWeight={600} marginBlock={3}>
                 Inicio
                 </Text>
             </Link>
 
-            <Link to='/site-novo/servi%C3%A7os'>
+            <Link to='/servi%C3%A7os'>
                 <Text color='#FFF' fontWeight={600} marginBlock={3}>
                 Serviços
                 </Text>
             </Link>
 
-            <Link to='/site-novo/quem-somos'>
+            <Link to='/quem-somos'>
                 <Text color='#FFF' fontWeight={600} marginBlock={3}>
                 Quem Somos
                 </Text>
             </Link>
 
-            <Link to='/site-novo/contato'>
+            <Link to='/contato'>
                 <Text color='#FFF' fontWeight={600} marginBlock={3}>
                 Contato
                 </Text>
