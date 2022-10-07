@@ -67,14 +67,14 @@ export function Footer({foawardRef}: any) {
                     
                     {/* 177.12.171.195 */}
                     <Box w={{sm: '100%', md: '60%', lg: '40%', xl: '33%', '2xl': '33%'}} marginTop={{sm: '5rem', lg: '0rem'}}>
-                        <form action="">
+                        <form action="https://submit-form.com/J0l3Bv1J">
                         <Stack>
                         <InputGroup>
                             <InputLeftElement
                             pointerEvents='none'
                             children={<AiOutlineUser color='white' />}
                             />
-                            <Input color='#FFF' ref={foawardRef} type='text' placeholder='Nome completo' _focus={{ borderColor: 'brand.red', outlineColor: 'brand.red'}} _active={{ borderColor: 'brand.red', outlineColor: 'brand.red' }}/>
+                            <Input required color='#FFF' ref={foawardRef} type='text' placeholder='Nome completo' _focus={{ borderColor: 'brand.red', outlineColor: 'brand.red'}} _active={{ borderColor: 'brand.red', outlineColor: 'brand.red' }}/>
                         </InputGroup>
                         </Stack>
                         <HStack spacing={4} marginTop={4}>
@@ -83,7 +83,7 @@ export function Footer({foawardRef}: any) {
                             pointerEvents='none'
                             children={<BsFillTelephoneFill color='white' />}
                             />
-                            <Input color='#FFF' type='tel' placeholder='Telefone' _focus={{ borderColor: 'brand.red', outlineColor: 'brand.red'}} _active={{ borderColor: 'brand.red', outlineColor: 'brand.red' }}/>
+                            <Input required color='#FFF' type='tel' placeholder='Telefone' _focus={{ borderColor: 'brand.red', outlineColor: 'brand.red'}} _active={{ borderColor: 'brand.red', outlineColor: 'brand.red' }}/>
                         </InputGroup>
 
                         <InputGroup>
@@ -94,28 +94,28 @@ export function Footer({foawardRef}: any) {
                             borderColor='brand.red'
                             fontSize='1.2em'
                             />
-                            <Input color='#FFF' placeholder='Email' _focus={{ borderColor: 'brand.red', outlineColor: 'brand.red'}} _active={{ borderColor: 'brand.red', outlineColor: 'brand.red' }}/>
+                            <Input required color='#FFF' placeholder='Email' _focus={{ borderColor: 'brand.red', outlineColor: 'brand.red'}} _active={{ borderColor: 'brand.red', outlineColor: 'brand.red' }}/>
                         </InputGroup>
                         </HStack>
                         
                         <HStack spacing={4} marginTop={4}>
-                        <Select _focus={{ borderColor: 'brand.red', outlineColor: 'brand.red'}} _active={{ borderColor: 'brand.red', outlineColor: 'brand.red' }} bg='black' color='white' name="state" ref={estadoRef} onChange={handleStateChange} placeholder='Selecione seu estado'>
+                        <Select required _focus={{ borderColor: 'brand.red', outlineColor: 'brand.red'}} _active={{ borderColor: 'brand.red', outlineColor: 'brand.red' }} bg='black' color='white' name="state" ref={estadoRef} onChange={handleStateChange} placeholder='Selecione seu estado'>
                         {estados.map(estado => 
                          <option className="text-black" value={estado.sigla}>{estado.nome}</option>
                         )}
                         </Select>
-                        <Select _focus={{ borderColor: 'brand.red', outlineColor: 'brand.red'}} _active={{ borderColor: 'brand.red', outlineColor: 'brand.red' }} bg='black' color='white' name="city" ref={cidadeRef} onChange={handleCityChange} placeholder='Selecione sua cidade'>
+                        <Select required _focus={{ borderColor: 'brand.red', outlineColor: 'brand.red'}} _active={{ borderColor: 'brand.red', outlineColor: 'brand.red' }} bg='black' color='white' name="city" ref={cidadeRef} onChange={handleCityChange} placeholder='Selecione sua cidade'>
                         {cidades.map(cidade => 
                         <option className="text-black" value={cidade.nome}>{cidade.nome}</option>
                         )}
                         </Select>
                         </HStack>
                         <HStack marginTop={4}>
-                            <Textarea color='#FFF' _focus={{ borderColor: 'brand.red', outlineColor: 'brand.red'}} _active={{ borderColor: 'brand.red', outlineColor: 'brand.red' }} h='8rem' placeholder="Mensagem"/>
+                            <Textarea required color='#FFF' _focus={{ borderColor: 'brand.red', outlineColor: 'brand.red'}} _active={{ borderColor: 'brand.red', outlineColor: 'brand.red' }} h='8rem' placeholder="Mensagem"/>
                         </HStack>
                         <Box display='flex' justifyContent='end' marginTop={4}>
                             <Button type="submit" bg='brand.red' color='white' w='6rem' fontSize='1.1rem' _hover={{ bg: 'brand.hover.red'}}>
-                                Enviar
+                                ﾠﾠEnviarﾠ
                             </Button>
                         </Box>
                         </form>
