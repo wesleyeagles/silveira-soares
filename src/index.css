@@ -63,7 +63,7 @@ body, html {
 
 .bg-quem-somos {
 
-    background-image: url(/site-novo/images/bg-quem-somos.png);
+    background-image: url(/images/bg-quem-somos.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -72,7 +72,7 @@ body, html {
 
 .bg-contato {
 
-    background-image: url(/site-novo/images/bg-contato.png);
+    background-image: url(/images/bg-contato.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -81,7 +81,7 @@ body, html {
 
 .bg-reengenharia {
 
-    background-image: url(/site-novo/images/bg-reengenharia.png);
+    background-image: url(/images/bg-reengenharia.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -90,7 +90,7 @@ body, html {
 
 .bg-obrigado {
 
-    background-image: url(/site-novo/images/bg-reengenharia.png);
+    background-image: url(/images/bg-reengenharia.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -98,7 +98,7 @@ body, html {
 
 .bg-slide {
 
-    background-image: url(/site-novo/images/bg-slide.png);
+    background-image: url(/images/bg-slide.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
