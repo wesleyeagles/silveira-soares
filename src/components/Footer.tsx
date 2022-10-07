@@ -115,7 +115,7 @@ export function Footer({foawardRef}: any) {
                         </HStack>
                         <Box display='flex' justifyContent='end' marginTop={4}>
                             <Button type="submit" bg='brand.red' color='white' w='6rem' fontSize='1.1rem' _hover={{ bg: 'brand.hover.red'}}>
-                                ﾠﾠEnviarﾠ
+                                ﾠEnviarﾠ
                             </Button>
                         </Box>
                         </form>
